@@ -1,6 +1,6 @@
 # 1814. Count Nice Pairs in an Array
 
-Level: **Medium** 🟠
+Level: $\color{orange}{Medium}$
 
 [https://leetcode.com/problems/count-nice-pairs-in-an-array/](https://leetcode.com/problems/count-nice-pairs-in-an-array/)
 

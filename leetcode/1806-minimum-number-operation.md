@@ -1,6 +1,6 @@
 # 1806. Minimum Number of Operations to Reinitialize a Permutation
 
-Medium
+Level: $\color{orange}{Medium}$
 
 [https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/)
 
