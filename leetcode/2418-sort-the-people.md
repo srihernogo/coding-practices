@@ -1,8 +1,10 @@
 # 2418. Sort the People
 
-## Description
+Easy
 
 [https://leetcode.com/problems/sort-the-people/](https://leetcode.com/problems/sort-the-people/)
+
+## Description
 
 Masalah ini mengharuskan kita untuk mengurutkan sebuah array nama orang (dalam urutan menurun) berdasarkan tinggi badan orang tersebut. Kita diberikan dua array, yaitu array "names" yang berisi nama-nama orang dan array "heights" yang berisi tinggi badan setiap orang.
 Kedua array ini memiliki panjang yang sama, dan elemen-elemen di dalamnya berhubungan satu sama lain berdasarkan indeks.

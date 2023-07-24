@@ -1,8 +1,10 @@
 # 1806. Minimum Number of Operations to Reinitialize a Permutation
 
-## Description
+Medium
 
 [https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/)
+
+## Description
 
 Masalah ini berkaitan dengan permutasi array dan operasi pada array tersebut.
 
@@ -51,7 +53,7 @@ Setelah operasi keempat, perm = [0, 1, 2, 4, 3, 5].
 Jadi hanya diperlukan 4 operasi.
 ```
 
-Constraints:
+**Constraints:**
 
 - 2 <= n <= 1000
 - n adalah bilangan bulat genap.
