@@ -134,4 +134,16 @@ n/a
 
 ## Additional
 
-n/a
+Problem real dari permasalahan di atas adalah mencari jumlah pasangan indeks yang memenuhi syarat "nice" pada array yang panjangnya mencapai maksimal 10^5 (100.000) elemen. Permasalahan ini dapat menjadi sulit karena membutuhkan waktu komputasi yang efisien untuk menyelesaikannya.
+
+Beberapa potensi tantangan atau kendala yang mungkin dihadapi dalam menyelesaikan masalah ini adalah:
+
+1. Efisiensi waktu: Karena panjang array "nums" bisa sangat besar, algoritma harus dirancang untuk berjalan dengan cepat dan efisien. Jika algoritma yang digunakan lambat, maka waktu eksekusi bisa sangat lama dan tidak memungkinkan untuk menyelesaikan masalah dalam waktu yang wajar.
+
+2. Perhitungan jumlah pasangan: Untuk mencari jumlah pasangan indeks yang memenuhi syarat "nice", kita harus menghitung semua kemungkinan pasangan (i, j) yang memenuhi kondisi 0 <= i < j < nums.length dan nums[i] + rev(nums[j]) == nums[j] + rev(nums[i]). Perhitungan ini dapat memakan banyak waktu jika tidak dioptimalkan dengan baik.
+
+3. Penanganan angka besar: Nilai angka dalam array "nums" dapat mencapai 10^9 (1 miliar). Hal ini bisa menyebabkan masalah dalam perhitungan, terutama ketika melakukan operasi matematika seperti pembagian dan perkalian. Jika tidak dikelola dengan baik, hal ini bisa menyebabkan angka overflow atau hasil yang tidak akurat.
+
+4. Penanganan nilai besar: Karena kita diminta untuk mengembalikan hasil modulo 10^9 + 7, kita harus memastikan hasil perhitungan tetap berada dalam batas-batas ini agar menghindari overflow.
+
+Untuk mengatasi tantangan ini, perlu dirancang algoritma yang efisien, menggunakan struktur data yang tepat, dan mengoptimalkan perhitungan matematika untuk menangani kasus dengan ukuran data besar. Juga, penting untuk menghindari operasi yang bisa menyebabkan overflow atau akurasi yang tidak tepat saat melakukan perhitungan.
