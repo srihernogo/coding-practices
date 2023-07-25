@@ -1,6 +1,6 @@
 # 2418. Sort the People
 
-Easy
+Level: $\color{green}{Easy}$
 
 [https://leetcode.com/problems/sort-the-people/](https://leetcode.com/problems/sort-the-people/)
 
