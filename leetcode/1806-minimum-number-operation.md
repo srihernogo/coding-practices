@@ -21,7 +21,7 @@ Tugas Anda adalah mencari jumlah minimum operasi non-nol yang perlu Anda lakukan
 
 Contoh 1:
 
-```
+```text
 Input: n = 2
 Output: 1
 Penjelasan: perm = [0, 1] pada awalnya.
