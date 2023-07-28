@@ -110,6 +110,120 @@ Dalam contoh di atas, kita membuat kelas `Solution` dengan metode `mergeAlternat
 
 Kita dapat menguji contoh-contoh yang diberikan dalam masalah dengan menginstansiasi kelas `Solution` dan memanggil metode `mergeAlternately` dengan input yang sesuai. Metode ini akan mengembalikan string hasil penggabungan "word1" dan "word2".
 
+## Test Scenario
+
+Untuk menuliskan test skenario menggunakan Java, kita dapat menggunakan framework pengujian seperti JUnit atau TestNG. Skenario pengujian ini akan memastikan bahwa solusi yang kita buat memenuhi contoh dan batasan masalah yang telah diberikan.
+
+```java
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class SolutionTest {
+
+    @Test
+    public void testExample1() {
+        Solution solution = new Solution();
+        String word1 = "abc";
+        String word2 = "pqr";
+        String expectedOutput = "apbqcr";
+        assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+    }
+
+    @Test
+    public void testExample2() {
+        Solution solution = new Solution();
+        String word1 = "ab";
+        String word2 = "pqrs";
+        String expectedOutput = "apbqrs";
+        assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+    }
+
+    @Test
+    public void testExample3() {
+        Solution solution = new Solution();
+        String word1 = "abcd";
+        String word2 = "pq";
+        String expectedOutput = "apbqcd";
+        assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+    }
+
+    @Test
+    public void testConstraints() {
+        Solution solution = new Solution();
+        String word1 = "x"; // Panjang 1
+        String word2 = "y"; // Panjang 1
+        String expectedOutput = "xy";
+        assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+    }
+
+    // Tambahkan lebih banyak metode test untuk menguji kasus-kasus lain sesuai kebutuhan.
+}
+```
+
+Pada contoh di atas, kita telah menulis beberapa metode test untuk menguji contoh-contoh yang telah diberikan, serta sebuah metode test untuk menguji batasan minimum (panjang string 1). Metode test ini menggunakan asserstions dari JUnit untuk memeriksa apakah hasil yang diharapkan sama dengan hasil yang dihasilkan oleh solusi `mergeAlternately`. Jika hasil tidak sesuai, maka JUnit akan menampilkan pesan kesalahan yang membantu kita untuk mengidentifikasi masalah dalam solusi kita.
+
+**Additional Test:**
+
+```java
+// Test ketika kedua string memiliki panjang yang sama:
+@Test
+public void testEqualLength() {
+    Solution solution = new Solution();
+    String word1 = "hello";
+    String word2 = "world";
+    String expectedOutput = "hweolrllod";
+    assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+}
+
+//Test ketika salah satu string kosong:
+@Test
+public void testOneEmptyString() {
+    Solution solution = new Solution();
+    String word1 = "hello";
+    String word2 = "";
+    String expectedOutput = "hello";
+    assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+}
+
+@Test
+public void testBothEmptyStrings() {
+    Solution solution = new Solution();
+    String word1 = "";
+    String word2 = "";
+    String expectedOutput = "";
+    assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+}
+
+//Test ketika kedua string hanya terdiri dari satu karakter:
+@Test
+public void testSingleCharacter() {
+    Solution solution = new Solution();
+    String word1 = "x";
+    String word2 = "y";
+    String expectedOutput = "xy";
+    assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+}
+
+//Test ketika salah satu string lebih panjang dari yang lain:
+@Test
+public void testDifferentLengths1() {
+    Solution solution = new Solution();
+    String word1 = "abcdef";
+    String word2 = "ghijklmnop";
+    String expectedOutput = "agbhcidjekflmnop";
+    assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+}
+
+@Test
+public void testDifferentLengths2() {
+    Solution solution = new Solution();
+    String word1 = "ab";
+    String word2 = "cdefg";
+    String expectedOutput = "acbdgef";
+    assertEquals(expectedOutput, solution.mergeAlternately(word1, word2));
+}
+```
+
 ## Complexity
 
 n/a
