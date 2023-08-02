@@ -17,3 +17,10 @@ Leetcode summary of solutions and tutorial notes. Java only. For self use. Categ
 🏴🏳🚩🏁
 
 ◻️◼️◾️◽️▪️▫️
+
+## Question
+
+1. Tolong jelaskan menggunakan bahasa problem berikut:
+2. Bagaimana solusinya menggunakan Java
+3. Buatkan test scenario atau tdd nya
+4. Bagaimana complexity nya
