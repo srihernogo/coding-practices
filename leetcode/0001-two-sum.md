@@ -27,7 +27,7 @@ Input: nums = [3,2,4], target = 6
 Output: [1,2]
 ```
 
-Contoh 2:
+Contoh 3:
 
 ```text
 Input: nums = [3,3], target = 6
