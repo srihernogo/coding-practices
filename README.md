@@ -25,4 +25,4 @@ Leetcode summary of solutions and tutorial notes. Java only. For self use. Categ
 3. Buatkan test scenario atau tdd nya
 4. Bagaimana complexity nya
 
-Jelaskan problem berikut dengan deskripsi, pendekatan atau langkah-langkah dari solusi, test scenario, dan penjelasan kompleksitas yang lebih rinci dalam format .md file:
+Jelaskan problem berikut dengan deskripsi, pendekatan dan langkah-langkah solusinya, test scenario, dan penjelasan kompleksitas yang lebih rinci dalam format .md file:
